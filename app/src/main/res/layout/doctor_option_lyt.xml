@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/doctorOptionLyt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/suggetion"
+        android:text="@string/Suggetion"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:onClick="OnClickBtn"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:id="@+id/docToeshop"
+        android:text="@string/eshop"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:onClick="OnClickBtn"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/doctorTodoctor"
+        android:text="@string/doctor"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:onClick="OnClickBtn"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/doctorCancel"
+        android:text="@string/cancel"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:backgroundTintMode="screen"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:onClick="OnClickBtn"
+        android:layout_margin="5dp"
+        />
+
+</LinearLayout>

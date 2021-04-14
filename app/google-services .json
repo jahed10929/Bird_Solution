@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "389065592379",
+    "project_id": "bird-solution",
+    "storage_bucket": "bird-solution.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389065592379:android:b2dc61375ac7ecce84961e",
+        "android_client_info": {
+          "package_name": "com.birdsolution.activity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "389065592379-tf64jhhr3kuk7f05m69si2n5a1m1gsdm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.birdsolution.activity",
+            "certificate_hash": "a5d2be6c2e21058461e5c5b188a42860d42cc2b4"
+          }
+        },
+        {
+          "client_id": "389065592379-ci79umhfe1nced63ma1d3ihkp094fev3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwgrpYimt1xcvoiMXqqtvqlYczqahQb0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "389065592379-ci79umhfe1nced63ma1d3ihkp094fev3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

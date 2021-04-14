@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lytfloating_option"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:id="@+id/suggetion"
+       android:text="SUGGESTION"
+       android:background="@color/white"
+       android:backgroundTint="@color/white"
+       android:textColor="@color/black"
+       android:textSize="20sp"
+       android:layout_margin="5dp"
+       android:onClick="OnClickBtn"
+
+      />
+    <Button
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+
+       android:id="@+id/eshop"
+       android:text="@string/eshop"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:onClick="OnClickBtn"
+        />
+    <Button
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:id="@+id/doctor"
+       android:text="@string/doctor"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:onClick="OnClickBtn"
+        />
+    <Button
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:id="@+id/cancel"
+       android:text="@string/cancel"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:backgroundTintMode="screen"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:onClick="OnClickBtn"
+        android:layout_margin="5dp"
+        />
+
+</LinearLayout>

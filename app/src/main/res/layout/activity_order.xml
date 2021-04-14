@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <include layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/oderCon">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:padding="@dimen/margin_10dp"
+                android:text="Prduct name"
+                android:paddingEnd="@dimen/margin_10dp"
+                android:textColor="@color/black"
+                android:layout_weight="40"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:padding="@dimen/margin_10dp"
+                android:textStyle="bold"
+                android:text="Price"
+                android:paddingEnd="@dimen/margin_10dp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_weight="60"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/orderRecycleview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            />
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_alignBottom="@+id/orderRecycleview">
+                <TextView
+                    android:id="@+id/orderProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:padding="@dimen/margin_10dp"
+                    android:text="Sub Total"
+                    android:textAlignment="center"
+                    android:paddingEnd="@dimen/margin_10dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="40"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/orderProductPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:padding="@dimen/margin_10dp"
+                    android:text="Price"
+                    android:paddingEnd="@dimen/margin_10dp"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:layout_weight="60"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/address"
+                >
+
+                <EditText
+                    android:layout_marginTop="20dp"
+                    android:background="@color/white"
+                    android:id="@+id/orderAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mobile"
+                >
+
+                <EditText
+                    android:layout_marginTop="20dp"
+                    android:background="@color/white"
+                    android:id="@+id/orderMObile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/oderCon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Confirm"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:onClick="OnClickBtn"
+        />
+
+
+
+
+
+    <!--   <include
+           layout="@layout/bottom_menu_lyt"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true" />-->
+
+    <!--</androidx.cardview.widget.CardView>
+</FrameLayout>-->
+
+
+</RelativeLayout>
